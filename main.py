@@ -84,7 +84,6 @@ def addStudents():
         cursor.close()
 
         flash('Successfully Registered', 'success')
-        # return redirect(url_for('addStudents'))
         # Redirect to the submission_result.html with the submitted data
         return redirect(url_for('submission_result', **request.form))
 
@@ -93,8 +92,7 @@ def addStudents():
 
 @app.route('/submission_result', methods=['GET'])
 def submission_result():
-    submitted_data = request.args.to_dict()
-    return render_template('submission_result.html', submitted_data=submitted_data)
+    return render_template('submission_result.html')
 
 
 if __name__ == "__main__":
