@@ -1,0 +1,41 @@
+/* Add this CSS code to style your form */
+.container-fluid {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+fieldset {
+    border: 2px solid #007bff; /* Border color for the fieldset */
+    border-radius: 8px;
+    padding: 20px;
+}
+
+legend {
+    color: #007bff; /* Color for the legend text */
+    font-size: 24px; /* Adjust the font size to your preference */
+    text-align: center; /* Center the legend text */
+    width: 100%; /* Make the legend span the full width of the fieldset */
+    margin-bottom: 20px; /* Adjust the margin-bottom to your preference */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Adjust the margin-bottom to your preference */
+}
+
+input[type="text"], input[type="file"] {
+    width: 100%; /* Make text and file input fields 100% width */
+    padding: 8px; /* Add padding to input fields */
+}
+
+.btn-primary {
+    width: 200px; /* Adjust the width of the submit button */
+    margin: 20px auto; /* Center the submit button */
+    display: block; /* Make it a block element to center it */
+}
+
+/* Optional: Add styles for photo uploaded message */
+.photo-message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #28a745; /* Green color for success */
+}

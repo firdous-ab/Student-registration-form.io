@@ -1,0 +1,12 @@
+<!-- submission_result.html -->
+{% extends 'layout.html' %}
+{% block content %}
+<div class="container-fluid col-md-6 col-md-6 ml-auto mr-auto">
+    <h2>Submitted Data:</h2>
+    <ul>
+        {% for key, value in submitted_data.items() %}
+            <li>{{ key }}: {{ value }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
